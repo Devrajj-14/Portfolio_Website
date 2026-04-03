@@ -1,0 +1,125 @@
+.skills-section {
+  margin: auto;
+  padding: 80px 0;
+  position: relative;
+  z-index: 2;
+  background-color: var(--backgroundColor);
+}
+
+.skills-section h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.skills-section h2 > span {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.skill-group {
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(94, 234, 212, 0.015) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+.skill-group:hover {
+  border-color: rgba(94, 234, 212, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accentColor);
+  margin: 0 0 20px 0;
+  opacity: 0.9;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: rgba(94, 234, 212, 0.1);
+  border-color: rgba(94, 234, 212, 0.3);
+  color: var(--accentColor);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(94, 234, 212, 0.1);
+}
+
+@media only screen and (max-width: 1400px) {
+  .skills-section h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skills-section h2 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .skill-group {
+    padding: 24px;
+  }
+
+  .skills-container {
+    width: calc(100% - 25px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-section h2 {
+    font-size: 35px;
+    line-height: 38px;
+    text-align: left;
+  }
+
+  .skill-tag {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+}

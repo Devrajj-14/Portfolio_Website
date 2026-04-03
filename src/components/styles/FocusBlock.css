@@ -1,0 +1,97 @@
+.focus-section {
+  margin: auto;
+  padding: 60px 0;
+  position: relative;
+  z-index: 2;
+  background-color: var(--backgroundColor);
+}
+
+.focus-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 32px 40px;
+  border: 1px solid rgba(94, 234, 212, 0.12);
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(94, 234, 212, 0.03) 0%,
+    rgba(94, 234, 212, 0.01) 100%
+  );
+  backdrop-filter: blur(10px);
+}
+
+.focus-label {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accentColor);
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+.focus-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.focus-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(234, 229, 236, 0.8);
+  padding: 6px 16px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+}
+
+.focus-item:hover {
+  border-color: rgba(94, 234, 212, 0.2);
+  color: var(--accentColor);
+}
+
+.focus-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accentColor);
+  box-shadow: 0 0 8px rgba(94, 234, 212, 0.4);
+  animation: focusPulse 2s ease-in-out infinite;
+}
+
+@keyframes focusPulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(94, 234, 212, 0.4);
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 4px rgba(94, 234, 212, 0.2);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .focus-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+    width: calc(100% - 25px);
+    box-sizing: border-box;
+  }
+
+  .focus-items {
+    gap: 10px;
+  }
+
+  .focus-item {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}
