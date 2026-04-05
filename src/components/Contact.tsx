@@ -45,7 +45,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/devrajgoswami/"
+              href="https://www.linkedin.com/in/devrajgoswamiii"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
