@@ -3,11 +3,20 @@ import "./styles/Skills.css";
 const skillGroups = [
   {
     category: "Programming",
-    skills: ["Python", "Go", "C++", "SQL", "AWS"],
+    skills: ["Java", "Python", "Go", "C++", "SQL", "AWS"],
   },
   {
     category: "Frameworks & Tools",
-    skills: ["Next.js", "Flask", "Node.js", "Express", "GitHub", "Firebase"],
+    skills: [
+      "Spring Boot",
+      "ASP.NET",
+      "Next.js",
+      "Flask",
+      "Node.js",
+      "Express",
+      "GitHub",
+      "Firebase",
+    ],
   },
   {
     category: "AI / ML",

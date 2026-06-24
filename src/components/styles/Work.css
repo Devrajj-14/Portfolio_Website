@@ -2,7 +2,7 @@
 .work-section {
   position: relative;
   z-index: 1;
-  background-color: var(--backgroundColor);
+  background: var(--sectionGradient);
   padding: 80px 0;
 }
 
@@ -30,8 +30,9 @@
 .carousel-track-container {
   overflow: hidden;
   width: 100%;
-  border-top: 1px solid #363636;
-  border-bottom: 1px solid #363636;
+  border-top: 1px solid rgba(94, 234, 212, 0.18);
+  border-bottom: 1px solid rgba(240, 166, 210, 0.16);
+  background: rgba(255, 255, 255, 0.018);
 }
 
 .carousel-track {
@@ -66,7 +67,8 @@
   line-height: 1;
   margin: 0;
   font-weight: 600;
-  opacity: 0.3;
+  opacity: 0.48;
+  color: var(--accentColor2);
 }
 
 .carousel-details {
@@ -83,7 +85,7 @@
 
 .carousel-category {
   font-weight: 200;
-  color: #adacac;
+  color: var(--mutedText);
   margin: 0;
   font-size: 16px;
 }
@@ -102,7 +104,7 @@
 
 .carousel-tools p {
   font-weight: 200;
-  color: #adacac;
+  color: var(--mutedText);
   margin: 6px 0 0;
   font-size: 15px;
 }
@@ -129,8 +131,8 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(94, 234, 212, 0.08), rgba(240, 166, 210, 0.07));
+  border: 1px solid var(--borderColor);
   color: #eae5ec;
   width: 50px;
   height: 50px;
@@ -146,7 +148,7 @@
 
 .carousel-arrow:hover {
   background: rgba(94, 234, 212, 0.15);
-  border-color: var(--accentColor);
+  border-color: rgba(240, 166, 210, 0.35);
   color: var(--accentColor);
   box-shadow: 0 0 20px rgba(94, 234, 212, 0.15);
 }
@@ -204,7 +206,7 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color: var(--backgroundColor);
+  background: linear-gradient(135deg, rgba(94, 234, 212, 0.15), rgba(240, 166, 210, 0.18)), var(--backgroundColor);
   width: 50px;
   border-radius: 50px;
   height: 50px;
@@ -212,8 +214,8 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5),
-    inset 0px 0px 10px 0px #393939;
+  box-shadow: 0px 0px 18px 0px rgba(240, 166, 210, 0.25),
+    inset 0px 0px 10px 0px rgba(255, 255, 255, 0.14);
   transition: 0.3s;
   opacity: 0;
 }
@@ -240,6 +242,7 @@
   max-width: 100%;
   max-height: 400px;
   border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
 }
 
 /* ── Responsive ── */

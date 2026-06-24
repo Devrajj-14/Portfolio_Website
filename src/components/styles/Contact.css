@@ -4,7 +4,7 @@
   margin-top: 100px;
   position: relative;
   z-index: 2;
-  background-color: var(--backgroundColor);
+  background: transparent;
 }
 
 .contact-section h3 {
@@ -12,11 +12,21 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  background: linear-gradient(180deg, #ffffff 0%, var(--accentColor) 60%, var(--accentColor2) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-flex {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
+  padding: 36px;
+  border: 1px solid var(--borderColor);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.045), rgba(94, 234, 212, 0.02));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
 }
 
 .contact-flex h4 {
@@ -37,7 +47,7 @@
 
 a.contact-social {
   font-size: 25px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(240, 166, 210, 0.55);
 }
 
 .contact-box h2 {
@@ -56,7 +66,8 @@ a.contact-social {
   line-height: 20px;
   display: flex;
   gap: 10px;
-  opacity: 0.5;
+  color: var(--mutedText);
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1600px) {

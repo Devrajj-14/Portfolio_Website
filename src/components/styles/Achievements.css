@@ -3,7 +3,7 @@
   padding: 80px 0;
   position: relative;
   z-index: 2;
-  background-color: var(--backgroundColor);
+  background: transparent;
 }
 
 .achievements-section h2 {
@@ -11,7 +11,7 @@
   line-height: 70px;
   font-weight: 400;
   text-align: center;
-  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background: linear-gradient(180deg, #ffffff 0%, var(--accentColor) 58%, var(--accentColor2) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -35,12 +35,12 @@
 .achievement-card {
   position: relative;
   padding: 40px 30px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
+  border: 1px solid var(--borderColor);
+  border-radius: 10px;
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.03) 0%,
-    rgba(94, 234, 212, 0.02) 100%
+    rgba(255, 255, 255, 0.052) 0%,
+    rgba(240, 166, 210, 0.025) 100%
   );
   backdrop-filter: blur(10px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -65,10 +65,10 @@
 }
 
 .achievement-card:hover {
-  border-color: rgba(94, 234, 212, 0.15);
+  border-color: rgba(240, 166, 210, 0.24);
   transform: translateY(-4px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(94, 234, 212, 0.05);
+    0 0 40px rgba(240, 166, 210, 0.06);
 }
 
 .achievement-card:hover::before {
@@ -105,9 +105,9 @@
   right: 20px;
   font-size: 48px;
   font-weight: 700;
-  opacity: 0.04;
+  opacity: 0.07;
   line-height: 1;
-  color: var(--accentColor);
+  color: var(--accentColor2);
 }
 
 @media only screen and (max-width: 1400px) {

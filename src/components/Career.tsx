@@ -15,23 +15,44 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
+                <h4>Software Engineer</h4>
+                <h5>PeerIslands</h5>
+              </div>
+              <div className="career-date">
+                <h3>Present</h3>
+                <span>Since Jul 1</span>
+              </div>
+            </div>
+            <p>
+              Currently contributing at PeerIslands, applying full-stack
+              engineering skills across real-world software development,
+              collaboration, and delivery workflows.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
                 <h4>Java Full Stack Training</h4>
                 <h5>BridgeLabz</h5>
               </div>
-              <h3>NOW</h3>
+              <div className="career-date">
+                <h3>5 Months</h3>
+                <span>Jan 1 - May 30</span>
+              </div>
             </div>
             <p>
-              Intensive project-based training in Java full-stack development
-              covering backend engineering, application architecture, and
-              Git/GitFlow-based workflows. Focused on hands-on implementation,
-              clean coding practices, and version control discipline.
+              Gained 5 months of intensive project-based training in Java full-stack
+              development covering backend engineering, application
+              architecture, and Git/GitFlow-based workflows. Focused on
+              hands-on implementation, clean coding practices, and version
+              control discipline.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Full Stack Developer Intern</h4>
-                <h5>Impulse Activator · Remote</h5>
+                <h5>Impulse Activator - Remote</h5>
               </div>
               <h3>2024</h3>
             </div>
@@ -46,10 +67,10 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>B.Tech — CSE</h4>
+                <h4>B.Tech - CSE</h4>
                 <h5>SRM IST, Kattankulathur</h5>
               </div>
-              <h3>2022–26</h3>
+              <h3>2022-26</h3>
             </div>
             <p>
               B.Tech in Computer Science and Engineering. CGPA: 8.72/10.

@@ -21,16 +21,21 @@ const MainContainer = ({ children }: PropsWithChildren) => {
   );
 
   useEffect(() => {
+    let resizeTimer: number | undefined;
     const resizeHandler = () => {
-      setSplitText();
       setIsDesktopView(window.innerWidth > 1024);
+      clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => {
+        setSplitText();
+      }, 150);
     };
     resizeHandler();
     window.addEventListener("resize", resizeHandler);
     return () => {
+      clearTimeout(resizeTimer);
       window.removeEventListener("resize", resizeHandler);
     };
-  }, [isDesktopView]);
+  }, []);
 
   return (
     <div className="container-main">
